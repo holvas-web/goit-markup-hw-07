@@ -223,7 +223,7 @@ body {
 }
 .features {
   color: var(--text);
-  padding-top: 120px;
+  padding: 96px 0;
 }
 .features-titel, .custom-titel
 .cards > h3,
@@ -240,7 +240,10 @@ body {
   gap: 24px
 }
 .features-item {
-flex-basis: calc((100% - 3 * 24px) / 4);
+/* flex-basis: calc((100% - 3 * 24px) / 4); */
+}
+.features-item:not(:last-child) {
+  padding-bottom: 72px;
 }
 .features-item > p {
   margin-top: 8px;
@@ -284,17 +287,21 @@ flex-basis: calc((100% - 3 * 24px) / 4);
 /*Our team*/
 .ourteam {
   background-color: var(--light);
+  padding-top: 96px;
+  padding-bottom: 56px;
 }
 .ourteam-list {
-  /* display: flex; */
-  margin-top: 72px;
-  gap: 24px;
+  /* display: flex; 
+  gap: 24px;*/
+  
 }
 .cards {
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 72px;
+
 }
 .cards > h3 {
   text-align: center;
@@ -583,10 +590,10 @@ flex-basis: calc((100% - 3 * 24px) / 4);
   left: 50%;
   top: 50%;
 
-  padding: 72px 24px 24px 24px;
+  padding: 0 18px;
 
   min-width: 296px;
-  min-height: 576px;
+  max-height: 90%;
 
   background: #FCFCFC;
   box-shadow: 
