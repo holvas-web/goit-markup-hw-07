@@ -1,0 +1,10 @@
+@media screen and (min-width: 480px) {
+    .container {
+        min-width: 396px;
+    }
+    .header-container {
+        display: none;
+    }
+        
+
+}
