@@ -125,6 +125,7 @@ body {
   
   padding-top: 14px;
   padding-bottom: 20px;
+  transition: opacity var(--transition), visibility var(--transition);  
 
 }
 .mob-menu-list {
@@ -696,7 +697,8 @@ body {
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--transition);
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal,
+.mob-menu.is-hidden {
   transform: translate(-50%, -50%) scaleY(0);
 }
 .modal-close {
