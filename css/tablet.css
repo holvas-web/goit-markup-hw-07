@@ -1,17 +1,17 @@
 .header-container {
-    /* display: flex; 
+    display: flex; 
     align-items: center;
-    justify-content: space-between; */
+    justify-content: space-between;
     
   }
   .nav-container {
-    /* display: flex; 
-    align-items: center;*/
+    display: flex; 
+    align-items: center;
   }
   .top-nav {
-  /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: baseline;*/
+    align-items: baseline;
   }
   .top-logo,
   .footer-logo {
@@ -35,10 +35,9 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* display: flex; */
+    display: flex;
     margin-left: 76px;
     gap: 40px;
-    display: none;
   }
   .top-menu .link {
     padding-top: 24px;
@@ -77,8 +76,8 @@
     transition: color var(--transition);
   }
   .top-contacts {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
   }
   .address-item:not(:last-child) {
     margin-right: 40px;
