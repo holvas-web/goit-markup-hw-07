@@ -58,95 +58,59 @@ body {
   margin: 0 auto;
   outline: 1px solid red;
 } 
+.container-mobile-menu {
+  position: relative;
+}
+
+.backdrop-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+.modal-mobile-menu {
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+.menu-open-btn {
+  display: block;
+  width: 30px;
+  height: 20px;
+  padding: 24px;
+  fill: var(--dark);
+}
+.menu-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+.top-logo,
+  .footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.34;
+  }
+  .top-logo > .link {
+    padding-top: 24px;
+  }
+  .logo-web {
+    color: var(--primary);
+    line-height: 1.34;
+  }
+  .top-menu, .top-contacts {
+    display: none;
+  }
 .wrap-mobile-nav {
   display: flex;
   justify-content: space-between;
-}
-.header-container {
-  /* display: flex; */
   align-items: center;
-  justify-content: space-between; 
-  
-}
-.nav-container {
-  /* display: flex; */
-  align-items: center;
-}
-.top-nav {
-/* display: flex;
-  flex-direction: row;
-  align-items: baseline;*/
-}
-.top-logo,
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  line-height: 1.34;
-}
-.top-logo > .link {
-  padding-top: 24px;
-}
-.logo-web {
-  color: var(--primary);
-  line-height: 1.34;
-}
-.top-menu {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  /* display: flex; */
-  margin-left: 76px;
-  gap: 40px;
-  display: none;
-}
-.top-menu .link {
-  padding-top: 24px;
-  padding-bottom: 28px;
-
-  transition: color var(--transition);
-}
-.top-menu .link:hover,
-.mail:hover, .tel:hover {
-  color: var(--pressed-state);
-}
-.top-menu .link:focus,
-.mail:focus, tel:focus {
-  color: var(--text);
-}
-.current {
-  color: var(--pressed-state);
-  position: relative;
-}
-.current::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  border-radius: 2px;
-  background-color: var( --pressed-state);
-}
-.mail, .tel {
-  letter-spacing: 0.02em;
-  color: var(--text);
-  font-style: normal;
-  line-height: 1.5;
-
-  transition: color var(--transition);
-}
-.top-contacts {
-  display: none;
-  /* display: flex; */
-  align-items: center;
-}
-.address-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .visually-hidden {
@@ -383,12 +347,13 @@ body {
 /*Footer*/
 .footer {
   background-color: var(--dark);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 .footer-container {
-  /* display: flex;  */
-  align-items: baseline;
+  /* display: flex;  
+  align-items: baseline;*/
+  text-align: center;
 }
 .footer-logo {
   color: var(--light);
@@ -398,12 +363,13 @@ body {
 }
 .footer-text {
   line-height: 1.5;
-  max-width: 264px;
+  /* max-width: 264px; */
   color: var(--accent);
-  margin-top: 16px;
+  margin-top: 8px;
+  text-align: left;
 }
-.text-footer {
-  margin-right: 120px;
+.text-footer, . {
+  margin-bottom: 72px;
 }
 /* .socmedia {
   margin-right: 80px;
@@ -411,6 +377,7 @@ body {
 .socmedia-text, .subscribe-text {
   color: var(--white);
   margin-bottom: 16px;
+  margin-top: 72px;
 }
 .socmedia .soclink {
   width: 100%;
@@ -433,9 +400,10 @@ body {
   margin-right: 24px;
 }
 .footer-input {
-  min-width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
+  margin-bottom: 16px;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -579,7 +547,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-.backdrop {
+.backdrop, .backdrop-mobile {
   position: fixed;
   top: 0;
   width: 100%;
@@ -589,15 +557,16 @@ body {
 
   transition: opacity var(--transition), visibility var(--transition);  
 }
-.modal{
+.modal, .modal-mobile-menu {
   position: absolute;
   left: 50%;
   top: 50%;
 
   padding: 0 18px;
+  margin-top: 72px;
 
-  min-width: 296px;
-  max-height: 90%;
+  min-width: 310px;
+  min-height: 640px;
 
   background: #FCFCFC;
   box-shadow: 
@@ -640,14 +609,15 @@ body {
   color: var(--dark);
   text-align: center;
 
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
+  padding-top: 72px;
 }
 .modal-form {
   /* display: flex; */
   flex-direction: column;
 }
 .form-items-wraper:nth-child(-n + 3) {
-  margin-bottom: 26px;
+  /* margin-bottom: 26px; */
 }
 .label-text {
   font-size: 12px;
