@@ -65,9 +65,9 @@
               
             <nav>
               <ul class="mob-menu-list list">
-                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./index.html" class="link current">Studio</a></li>
-                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./portfolio.html" class="link">Portfolio</a></li>
-                <li class="mob-menu-item"><a class ="mob-menu-link link" href="" class="link">Contacts</a></li>
+                <li class="mob-menu-item"><a class ="mob-menu-link link current" href="./index.html">Studio</a></li>
+                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./contacts.html">Contacts</a></li>
               </ul>
             </nav> 
           </div> 
@@ -207,20 +207,22 @@
       </section>
 
       <!--WHAT ARE WE DOING-->
-      <section class="offer section">
+      <section class="offer">
         <div class="container offer-container">
           <h2>What are we doing</h2>
           <ul class="offer-list list">
             <li class="offer-item">
               <img
+                srcset="./images/desktop@2x.jpg"
                 src="./images/desktop.jpg"
-                alt="monitor of computer"
+                alt="computer monitor"
                 width="360"
                 height="300"
               />
             </li>
             <li class="offer-item">
               <img
+                srcset="./images/smartfon@2x.jpg"
                 src="./images/smartfon.jpg"
                 alt="smartfons screens"
                 width="360"
@@ -229,6 +231,7 @@
             </li>
             <li class="offer-item">
               <img
+                srcset="./images/laptop@2x.jpg"
                 src="./images/laptop.jpg"
                 alt="computer and smartfon"
                 width="360"
@@ -250,7 +253,7 @@
                 class="ourteam-img"
                 srcset="
                   ./images/product_designer_retina.jpg 1x,
-                  ./images/product_designer_retina.jpg 2px 
+                  ./images/product_designer_retina.jpg 2x 
                   "
                 src="./images/product_designer_base.jpg"
                 alt="product designer"
@@ -298,7 +301,7 @@
                 class="ourteam-img"
                 srcset="
                   ./images/frontend_developer_retina.jpg 1x,
-                  ./images/frontend_developer_retina.jpg 2px 
+                  ./images/frontend_developer_retina.jpg 2x 
                   "
                 src="./images/frontend_developer_base.jpg"
                 alt="frontend developer"
@@ -346,7 +349,7 @@
                 class="ourteam-img"
                 srcset="
                   ./images/marketing_retina.jpg 1x,
-                  ./images/marketing_retina.jpg 2px 
+                  ./images/marketing_retina.jpg 2x 
                   "
                 src="./images/marketing_base.jpg"
                 alt="marketing"
@@ -394,7 +397,7 @@
                 class="ourteam-img"
                 srcset="
                   ./images/ui_designer_retina.jpg 1x,
-                  ./images/ui_designer_retina.jpg 2px 
+                  ./images/ui_designer_retina.jpg 2x 
                   "
                 src="./images/ui_designer_base.jpg"
                 alt="ui designer"
@@ -543,11 +546,12 @@
         <div class="footer-subscribe">
           <p class="subscribe-text">Subscribe</p>
 
-          <form action="" class="footer-form">
+          <form class="footer-form">
             <label for="email">
               <input class="footer-input"
                 type="email" 
                 name="email" 
+                id="email"
                 placeholder="E-mail">
             </label>
 
@@ -574,7 +578,7 @@
 
         <p class="modal-titel">Leave your contacts and we will call you back</p>
         
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <div class="form-items-wraper">
             <label for="username" class="label-text">Name</label>
             <div class="input-wrap">
@@ -654,15 +658,3 @@
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
-
-
-<!--
-  <li class="image-jobs">
-    <img 
-      srcset="./images/Rectangle1@x2.jpg 2x" 
-      src="./images/Rectangle1.jpg" 
-      alt="computer monitor" 
-      width="360"
-    >
-  </li>
--->
