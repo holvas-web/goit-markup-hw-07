@@ -324,9 +324,9 @@ body {
 .features-item {
 /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
-/* .features-item:not(:last-child) {
-  padding-bottom: 72px;
-} */
+ .features-item:not(:last-child) {
+ padding-bottom: 72px;
+} 
 .features-item > p {
   margin-top: 8px;
 }
@@ -369,8 +369,8 @@ body {
 .ourteam-list {
   /* display: flex; 
   gap: 24px;*/
-  margin: 0 12px;
-  
+  display: block;
+  margin: auto;
 }
 .cards {
   background-color: var(--white);
@@ -378,9 +378,9 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 72px;
   width: fit-content;
-
+  margin: auto;
+  margin-bottom: 72px;
 }
 .cards > h3 {
   text-align: center;
@@ -461,14 +461,13 @@ body {
 }
 
 /*Footer*/
+
 .footer {
   background-color: var(--dark);
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+  padding-top: 100px;
+  padding-bottom: 100px; 
 }
 .footer-container {
-  /* display: flex;  
-  align-items: baseline;*/
   text-align: center;
 }
 .footer-logo {
@@ -479,14 +478,14 @@ body {
 }
 .footer-text {
   line-height: 1.5;
-  /* max-width: 264px; */
+  max-width: 264px;
   color: var(--accent);
   margin-top: 8px;
   text-align: left;
 }
-.text-footer, . {
+/* .text-footer {
   margin-bottom: 72px;
-}
+} */
 .socmedia-text, .subscribe-text {
   color: var(--white);
   margin-bottom: 16px;
@@ -507,7 +506,7 @@ body {
 }
 
 .footer-form {
-  /* display: flex; */
+  /* display: flex;  */
 }
 .footer-form > label {
   margin-right: 24px;
@@ -531,8 +530,8 @@ body {
   margin-left: auto;
 }
 .footer-btn {
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex;
+  align-items: center; */
   padding: 8px 24px;
 
   background-color: var(--primary);
@@ -911,6 +910,10 @@ body {
     line-height: calc(36 / 40);
   }
 
+  .footer-container {
+    padding: 0 80px;
+  }
+
     /* .service {
       background-image: var(--gradient),
       url(./images/hero-bg-tablet.jpg);
@@ -929,11 +932,16 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     min-width: 736px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .container-tablet {
     min-width: 496px;
     padding-left: 0;
     padding-right: 0;
+  }
+  .footer-container {
+    min-width: 582px;
   }
 
   .menu-open-btn, 
@@ -1031,6 +1039,12 @@ body {
     font-size: 56px;
     line-height: 1.07;
   }
+  .modal{
+    width: 408px;
+    min-height: 586px;
+    padding: 24px;
+    
+  }
 
   .features-list {
     display: flex;
@@ -1040,6 +1054,51 @@ body {
   }
   .features-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .ourteam-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+  }
+  .cards {
+    margin: 0 0 72px 0;
+  }
+
+  .soclist {
+    justify-content: flex-start;
+    padding-top: 16px;
+    gap: 16px;
+  }
+  .socmedia-text {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .footer-tablet {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 0;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-subscribe {
+    text-align: left;
+    margin-left: 0;
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+  }
+  .footer-input {
+    width: 264px;
   }
 
   .offer-list {
@@ -1055,6 +1114,9 @@ body {
 /* ============ @MEDIA  1200px ============ */
 
 @media screen (min-width: 1200px) {
+  .container, .footer-container,.container-tablet {
+    min-width: 1128px;
+  }
   .icons-features {
     display: none;
     background: #F4F4FD;
