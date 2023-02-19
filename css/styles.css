@@ -347,17 +347,6 @@ body {
   margin-bottom: 72px;
 }
 
-/* @media screen and (min-width: 768) {
-  .offer-list {
-    display: flex; 
-    gap: 24px;
-    margin-top: 72px;
-  }
-  .offer-list img {
-    border: 1px solid #e7e9fc;
-  } 
-} */
-
 /*Our team*/
 .ourteam {
   background-color: var(--light);
@@ -502,9 +491,6 @@ body {
   background-color: var(--success);
 }
 
-.footer-form {
-  /* display: flex;  */
-}
 .footer-form > label {
   margin-right: 24px;
 }
@@ -526,9 +512,7 @@ body {
 .footer-subscribe{
   margin-left: auto;
 }
-.footer-btn {
-  /* display: inline-flex;
-  align-items: center; */
+ .footer-btn {
   padding: 8px 24px;
 
   background-color: var(--primary);
@@ -546,8 +530,8 @@ body {
   background-color: var(--pressed-state);
 }
 .input-icon {
-  fill: currentColor;
-}
+  fill: currentColor; 
+} 
 
 /*--------Styles for portfolio--------*/
 .portfolio {
@@ -812,7 +796,7 @@ body {
   padding-left: 0.2em;
   font-size: 9px;
 }
- .btn-form-send {
+.btn-form-send {
   margin-top: 24px;
   display: block;
   margin-left: auto;
@@ -936,8 +920,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
-    padding-left: 0;
-    padding-right: 0;
   }
   .container-tablet {
     min-width: 496px;
@@ -1209,4 +1191,28 @@ body {
     display: block;
   }
 
+  .footer-btn {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+  }
+
+  .footer-container {
+    text-align: left;
+    display: flex; 
+    align-items: baseline;
+  }
+  
+  .text-footer {
+    margin-right: auto;
+  }
+  .socmedia-text, .subscribe-text {
+    margin-top: 0;
+  }
+  .soclist {
+    padding-top: 0;
+ }
 }
