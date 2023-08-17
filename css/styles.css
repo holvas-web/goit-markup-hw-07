@@ -52,6 +52,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.no-scroll {
+    overflow: hidden;
+}
 
 /*Header*/
 .container {
