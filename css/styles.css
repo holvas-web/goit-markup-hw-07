@@ -58,7 +58,7 @@ body {
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 1px solid red;
+/*   outline: 1px solid red; */
 } 
 .container-mob-menu {
   min-width: 290px;
