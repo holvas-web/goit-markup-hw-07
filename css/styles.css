@@ -332,7 +332,7 @@ body {
   text-align: center;
 }
 
-  .features-item:not(:last-child) {
+.features-item:not(:last-child) {
   padding-bottom: 72px;
 } 
 .features-item > p {
@@ -1113,6 +1113,30 @@ body {
   .footer-input {
     width: 264px;
   }
+
+  /* ----------filters--------- */
+.portfolio {
+    padding: 64px 0 96px 0;
+}
+.filters-list {
+    margin-bottom: 64px;
+    justify-content: center;
+}
+/* --------------portfolio-------------- */
+.item-list {
+flex-direction: row;
+flex-wrap: wrap;
+row-gap: 72px;
+}
+.portfolio-item {
+    flex-basis: calc((100% - 24px ) / 2);
+
+}
+/* ----------modal---------- */
+.modal {
+    width: 408px;
+    height: 584px;
+}
 }
 
 /* ============ @MEDIA  1200px ============ */
