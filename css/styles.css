@@ -58,11 +58,18 @@ body {
 
 /*Header*/
 .container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
 /*   outline: 1px solid red; */
 } 
+
+.moby-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .container-mob-menu {
   min-width: 290px;
   height: 100%;
@@ -177,7 +184,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: calc(28 / 40);
 
   text-transform: capitalize;
@@ -546,15 +553,21 @@ body {
 
 /*--------Styles for portfolio--------*/
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .filters-list {
-  /* min-width: 586px; */
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
+  margin-bottom: 48px
+
+  /* min-width: 586px; 
+  display: flex;
   justify-content: center;
   margin-bottom: 72px;
-  gap: 24px;
+  gap: 24px; */
 }
 .filters-btn {
   background-color: var(--light);
@@ -569,7 +582,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
 
-  padding: 12px 24px;
+  padding: 8px 16px;
+  /* padding: 12px 24px; */
 
   transition: 
     color var(--transition), 
@@ -589,21 +603,20 @@ body {
 }
 
 .gallery-list {
-  /* display: flex; 
+  display: flex; 
   flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;*/
+  gap: 48px;
 }
-.gallery-items {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-}
+
 .gallery-top-wrapp {
   position: relative;
 
   overflow: hidden;
 }
 .text-animation {
-  position: absolute;
+  display: none;
+
+  /* position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -616,7 +629,7 @@ body {
   background-color: var(--primary);
 
   transform: translateY(100%);
-  transition: transform var(--transition);
+  transition: transform var(--transition); */
 }
 .gallery-link:is(:hover, :focus) .text-animation {
   transform: translateY(0%);
@@ -1119,6 +1132,8 @@ body {
     padding: 64px 0 96px 0;
 }
 .filters-list {
+  row-gap: 72px;
+    column-gap: 24px;
     margin-bottom: 64px;
     justify-content: center;
 }
@@ -1128,9 +1143,17 @@ flex-direction: row;
 flex-wrap: wrap;
 row-gap: 72px;
 }
-.portfolio-item {
+/* .portfolio-item {
     flex-basis: calc((100% - 24px ) / 2);
+} */
 
+.gallery-items {
+  flex-basis: calc((100% - 2 * 24px) / 2);
+}
+
+.gallery-list {
+  row-gap: 72px;
+  column-gap: 24px;
 }
 /* ----------modal---------- */
 .modal {
