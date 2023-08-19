@@ -42,8 +42,96 @@
               </li>
             </ul>
           </address>
+
+           <button type="button" class="menu-open-btn js-open-menu" data-menu-open>
+          <svg class="icon-menu-btn" width="32px" height="21px">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--~~~~~~~~~~~~ MOBILE MENU ~~~~~~~~~~~~~~~~-->
+
+      <div class="mob-menu js-menu-container is-hidden" data-menu>
+        <div class="container-mob-menu">
+          <div>
+            <button type="button" class="modal-close-btn js-close-menu" data-menu-close>
+              <svg class="close-mob-button-icon" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-close-button"></use>
+              </svg>
+            </button>
+              
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item"><a class ="mob-menu-link link current" href="./index.html">Studio</a></li>
+                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="mob-menu-item"><a class ="mob-menu-link link" href="./contacts.html">Contacts</a></li>
+              </ul>
+            </nav> 
+          </div> 
+    
+          <div>
+            <address class="mob-address">
+              <ul class="mob-top-contacts list">
+                <li class="mob-address-item">
+                  <a class="mob-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                  <li class="mob-address-item">
+                  <a class="mob-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+            </address>
+              
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-items">
+                <a href="https://www.instagram.com" class="mob-soc-link link" target="_blank" rel="noreferrer noopener">
+                  <svg class="soc-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-items">
+                <a
+                  href="https://twitter.com/"
+                  class="mob-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="soc-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-items">
+                <a
+                  href="https://www.facebook.com/"
+                  class="mob-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="soc-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-items">
+                <a
+                  href="https://linkedin.com/"
+                  class="mob-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="soc-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+    
     <!--MAIN-->
     <main>
       <section class="portfolio">
@@ -315,5 +403,9 @@
         </div>
       </div>
     </footer>
+
+    <!--JavaScript-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
