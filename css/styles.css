@@ -1170,7 +1170,8 @@ row-gap: 72px;
   .container-tablet,
   .container-features {
     width: 1158px;
-    max-width: 1440px;;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0 15px;
   }
 
