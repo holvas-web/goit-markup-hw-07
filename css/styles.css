@@ -1175,6 +1175,10 @@ row-gap: 72px;
     padding: 0 15px;
   }
 
+  .gallery-items {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
   .section {
     padding: 120px 0;
   }
