@@ -1147,10 +1147,6 @@ row-gap: 72px;
     flex-basis: calc((100% - 24px ) / 2);
 } */
 
-.gallery-items {
-  flex-basis: calc((100% - 2 * 24px) / 2);
-}
-
 .gallery-list {
   row-gap: 72px;
   column-gap: 24px;
