@@ -677,13 +677,13 @@ body {
 .modal{
   position: absolute;
   left: 50%;
-  top: 42%;
+  top: 35%;
 
   padding: 24px 16px;
-  margin-top: 65px;
+  margin-top: 60px;
 
   min-width: 290px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 
   background: #FCFCFC;
   box-shadow: 
